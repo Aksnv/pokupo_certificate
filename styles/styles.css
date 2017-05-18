@@ -204,3 +204,33 @@ p.certificate__number {
 .certificate-inner .b-item__price {
   color: #02903d;
 }
+
+/* Certificate 750px styles */
+
+@media screen and (max-width: 993px) {
+
+  .certificate-outer {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .certificate-inner {
+    width: 95%;
+  }
+
+  .certificate__image, 
+  .certificate__content {
+    float: none;
+    width: 100%;
+  }
+
+  .certificate__image {
+    text-align: center;
+  }
+
+  .certificate__content {
+    margin-left: 100px;
+    margin-left: 100px;
+  }
+
+}
