@@ -16,22 +16,36 @@
 }
 
 .certificate__top b {
-  font-size: 45px;
+  font-size: 58px;
   font-weight: 700;
 }
 
 .certificate-inner h1 {
-  color: #fff;
+  line-height: 55px;
+  margin-bottom: 5px;
+  color: #fff!important;
 }
 
 .certificate-inner h2 {
-  color: #848e8f;
+  margin-bottom: 28px;
+  padding-left: 5px;
+  color: #848e8f!important;
+}
+
+.certificate-inner p {
+  padding-left: 3px;
+  margin-bottom: 0;
+}
+
+p.certificate__seller {
+  font-size: 18px;
+  margin-bottom: 12px;
 }
 
 .certificate__top {
   text-align: center;
-  padding-top: 30px;
-  padding-bottom: 40px;
+  padding-top: 38px;
+  padding-bottom: 64px;
 }
 
 .certificate__image,
@@ -41,22 +55,38 @@
 
 .certificate__image {
   width: 290px;
-  margin-left: 30px;
-  margin-right: 40px;
+  margin-left: 41px;
+  margin-right: 61px;
 }
 
 .certificate__content {
   width: 500px;
+  padding-top: 3px;
 }
 
 .certificate__content a {
+  color: #fff!important;
+}
+
+.certificate__content a:hover {
+  color: #848e8f!important;
+}
+
+.certificate-inner .b-item__price {
+  padding-top: 39px;
+  padding-left: 3px;
+  padding-bottom: 66px;
   color: #fff;
+}
+
+.certificate__content #ya_share {
+  padding-left: 3px;
 }
 
 .certificate-preview {
   text-align: center;
   margin: 0 auto;
-  padding-top: 40px;
+  padding-top: 49px;
   padding-bottom: 40px;
 }
 
@@ -64,14 +94,19 @@
   display: inline-block;
   vertical-align: top;
   width: 63px;
-  height: 58px;
+  height: 60px;
+  margin-right: 3px;
   padding-top: 3px;
   border: 1px solid #848e8f;
 }
 
+.certificate-preview__item:last-child {
+  margin-right: 0;
+}
+
 .certificate-preview__item img {
   max-width: 100%;
-  max-height: 50px;
+  max-height: 51px;
 }
 
 .certificate-outer .increase,
