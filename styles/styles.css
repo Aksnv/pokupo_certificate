@@ -54,8 +54,10 @@
 }
 
 .certificate-preview {
-  width: auto;
+  text-align: center;
   margin: 0 auto;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 .certificate-preview__item {
@@ -63,5 +65,34 @@
   vertical-align: top;
   width: 63px;
   height: 58px;
+  padding-top: 3px;
   border: 1px solid #848e8f;
+}
+
+.certificate-preview__item img {
+  max-width: 100%;
+  max-height: 50px;
+}
+
+.certificate-outer .increase,
+.certificate-outer button {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.certificate-outer .like_button {
+  display: block;
+  margin-bottom: 40px;
+}
+
+.certificate__text {
+  background-image: url("../images/image_2.jpg");
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+.certificate__text p {
+  width: 790px;
+  margin: 0 auto;
+  padding-top: 30px;
 }

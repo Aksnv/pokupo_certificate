@@ -1248,152 +1248,51 @@
                   </div>
 
                   <div class="certificate-preview">
-                    <div class="certificate-preview__item"></div>
-                    <div class="certificate-preview__item"></div>
-                    <div class="certificate-preview__item"></div>
-                    <div class="certificate-preview__item"></div>
+                    <div class="certificate-preview__item"><a href="#"><img src="images/image_1.jpg" alt=""></a></div>
+                    <div class="certificate-preview__item"><a href="#"><img src="images/image_1.jpg" alt=""></a></div>
+                    <div class="certificate-preview__item"><a href="#"><img src="images/image_1.jpg" alt=""></a></div>
+                    <div class="certificate-preview__item"><a href="#"><img src="images/image_1.jpg" alt=""></a></div>
                   </div>
-                </div>
-              </div>
-            
 
-
-
-
-  <div class="b-catalog-item" style="">
-    <h1 data-bind="text: blocks.main.chort_name, attr: {id : blocks.main.cssTitleToCart}" class="b-catalog-item__title" id="goodsTilteToCart_8f2a97eb-ed31-40ef-9754-5014977244c4">Гигантский транспорт</h1>
-    <h2 class="b-catalog-item__subtitle">ID
-      <!-- ko text: id -->144761<!-- /ko-->
-    </h2>
-    <div class="columns triple">
-      <div class="first column">
-        <div class="content_pkp">
-          <div data-bind="template: { name: 'goodsGalleryBlockTmpl', data: blocks }"><!-- version 1.0--><!-- ko if: main.discount() > 0 --><!-- /ko -->
-  <style></style><div class="fotorama--hidden"></div><div class="b-catalog-item__photos fotorama fotorama1495112011139"><div class="fotorama__wrap fotorama__wrap--css3 fotorama__wrap--slide fotorama__wrap--toggle-arrows fotorama__wrap--no-controls" style="width: 313px; min-width: 0px; max-width: 100%;"><div class="fotorama__stage" style="width: 313px; height: 238px;"><div class="fotorama__fullscreen-icon" tabindex="0" role="button"></div><div class="fotorama__stage__shaft" style="transition-duration: 0ms; transform: translate3d(0px, 0px, 0px); width: 313px; margin-left: 0px;"><div class="fotorama__stage__frame fotorama__loaded fotorama__loaded--img fotorama__active" style="left: 0px;"><img src="//seller.pokupo.ru/images/big/gallery/5c8b8b8b26506fd98868e3af8f0baa32efde092b.png" class="fotorama__img" style="width: 313px; height: 238px; left: 0px; top: 0px;"></div></div><div class="fotorama__arr fotorama__arr--prev fotorama__arr--disabled" tabindex="-1" role="button" disabled="disabled" style="display: none;"></div><div class="fotorama__arr fotorama__arr--next fotorama__arr--disabled" tabindex="-1" role="button" disabled="disabled" style="display: none;"></div><div class="fotorama__video-close"></div></div></div></div></div>
-        </div>
-      </div>
-      <div class="second double column">
-        <div class="content_pkp">
-          <div class="b-catalog-item__seller-info slidedown"><span id="user_information_slidedown" data-target="info" class="slidedown__trigger" data-bind="i18n: 'goods.mess11'">Информация о продавце</span>
-            <div data-target="info" class="slidedown__content hidden">
-              <div data-bind="template: { name: 'infoSellerTmpl', data: sellerInfo }"><!-- version 1.0 -->
-  <div>
-    <div class="b-profile-info__actions">
-      <!-- ko if: $parent.show.shop -->
-      <a target="_blank" data-bind="attr: {href: shop.mailtoShop}, i18n: 'infoSeller.mess1'" class="btn btn-xs ask-question" href="mailto:support@pokupo.ru">Задать вопрос</a>
-      <!-- /ko -->
-      <div class="b-support-info info_seller_dropdown dropdown">
-        <span class="b-support-info__title">
-          <span data-target="support" class="info_seller_dropdown__trigger dropdown__trigger" data-bind="i18n: 'infoSeller.mess2'"> Поддержка</span>
-        </span>
-        <div data-target="support" class="b-support-info__content info_seller_dropdown__content dropdown__content hidden">
-          <p>
-            <!-- ko if: shop.site_support --><!-- /ko -->
-            <!-- ko if: $parent.show.shop -->
-            <span class="label" data-bind="i18n: 'infoSeller.mess4'">Написать</span>
-            <a href="mailto:support@pokupo.ru" data-bind="attr: {href: shop.mailtoShop}, text: shop.email_support" class="action">support@pokupo.ru</a>
-            <!-- /ko -->
-            <!-- ko if: shop.skype_support --><!-- /ko -->
-            <!-- ko if: shop.icq_support --><!-- /ko -->
-            <!-- ko if: shop.phones_support --><!-- /ko -->
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="b-profile-info__summary">
-      <!-- ko if: $parent.show.shop -->
-      <div class="b-profile-info__photo b-profile-info__photo--square">
-        <img src="//seller.pokupo.ru/images/logos/shop/1392.png" data-bind="attr: {src : shop.route_logo_shop, title : shop.name_shop}" title=" ">
-      </div>
-      <h2 data-bind="text: shop.name_shop" class="b-profile-info__title"> </h2>
-      <h2 class="b-profile-info__subtitle">ID
-        <!-- ko text: shop.id -->1392<!-- /ko -->
-      </h2>
-      <!-- /ko -->
-      <ul class="b-profile-info__characters-list">
-        <!-- ko if: $parent.show.shop -->
-        <li>
-          <span class="char" data-bind="i18n: 'infoSeller.mess8'">Рейтинг:</span>
-          <span data-bind="text: shop.rating_shop" class="value value--orange">0</span>
-        </li>
-        <li>
-          <span class="char" data-bind="i18n: 'infoSeller.mess9'">Отзывы / претензии:</span>
-          <span class="value"><span class="value--orange">
-              <!-- ko text:  shop.positive_opinion-->0<!-- /ko --></span> / <span class="value--red">
-              <!-- ko text: shop.negative_opinion -->0<!-- /ko --></span></span>
-        </li>
-        <li>
-          <span class="char" data-bind="i18n: 'infoSeller.mess10'">Товаров: </span><span data-bind="text: shop.all_goods" class="value">546</span>
-        </li>
-        <!-- ko if: shop.site_shop -->
-        <li>
-          <a href="https://infoskills.ru" data-bind="attr: {href: shop.site_shop}, i18n: 'infoSeller.mess11'" class="action" target="_blank">Все товары продавца</a>
-        </li>
-        <!-- /ko -->
-        <!-- /ko -->
-      </ul>
-    </div>
-  </div></div>
-            </div>
-          </div>
-          <div class="columns triple columns--resp_fix">
-            <div class="first double column">
-              <div class="content_pkp">
-                <div class="b-catalog-item__description">
-                  <!-- ko if: blocks.main.manufacturer --><!-- /ko -->
-                  <div class="b-stars">
-                    <div data-bind="attr: {style: 'width:' + blocks.main.rating_goods + '%'}" class="b-stars__rating" style="width:0%"></div>
-                  </div><!-- ko foreach: moreBlock --><!-- ko if: key == "opinion" --><!-- /ko --><!-- ko if: key == "opinion" --><!-- /ko --><!-- ko if: key == "opinion" --><!-- ko if: content --><span class="pseudo-link" id="opinion_btn">
-                    <!-- ko text: content.params.length -->0<!-- /ko--> <span data-bind="i18n: 'goods.mess12'">отзыва</span></span><!-- /ko --><!-- /ko --><!-- /ko -->
-                  <p data-bind="html: blocks.main.full_name">Гигантский транспорт</p>
-                  <p><span data-bind="i18n: 'goods.mess13'">Метки</span>:
-                    <!-- ko text: blocks.main.key_words --><!-- /ko-->
-                  </p>
-                  <div class="b-item__price"><!-- ko if: blocks.main.discount() > 0 --><!-- /ko --><!-- ko if: blocks.main.discount() == 0 -->
-                    <div class="b-price"><span data-bind="text: blocks.main.sell_end_cost" class="b-price__number">1200</span><span class="b-price__thinsp">&nbsp;</span><span class="b-price__rubl" data-bind="i18n: 'common.short_currency'">Р</span></div><!-- /ko -->
-                  </div><!-- ko if: blocks.main.discount() > 0 --><!-- /ko -->
-                </div>
-              </div>
-            </div>
-            <div class="third column">
-              <div class="content_pkp b-catalog-item__actions">
-                <div class="increase">
-                  <!-- ko ifnot: blocks.main.isEgoods -->
-                  <p class="b-catalog-item__limits">
-                    <span data-bind="i18n: 'goods.mess15'">На складе</span>: <span data-bind="i18n: blocks.main.inStock" class="value">Да</span>
-                  </p>
-                  <!-- /ko -->
-                  <!-- ko if: blocks.main.showSelectionCount -->
-                  <!-- ko if: blocks.main.is_universal != 'yes' -->
-                  <!-- ko if: blocks.main.count() > 0 -->
-                  <div style="margin-bottom:20px" class="b-increment-input">
-                    <span data-bind="click: blocks.main.ClickMinus" class="b-increment-input__darr"></span>
-                    <span class="b-increment-input__input-wrapper">
-                      <input type="text" value="1" maxlength="3" autocomplete="off" data-bind="value: blocks.main.ordered, attr: {id: blocks.main.cssGoodsOrdered}" class="inline-input b-increment-input__input" id="ordered_144761">
-                    </span>
-                    <span data-bind="click: blocks.main.ClickPlus" class="b-increment-input__uarr"></span>
-                  </div>
-                  <!-- /ko -->
-                  <!-- /ko -->
-                  <!-- /ko -->
-                </div><!-- ko if: blocks.main.showAddToCart -->
-                <button id="btn_to_cart" type="button" data-bind="click: blocks.main.AddToCart" class="btn"><i class="icon icon-cart"></i><span data-bind="i18n: 'goods.mess16'">В корзину</span></button><br><!-- /ko --><!-- ko if: blocks.main.showBuy -->
-                <button type="button" data-bind="click: blocks.main.Buy, i18n: 'goods.mess17'" class="btn">Купить сразу</button><!-- /ko -->
-                  <!-- ko if: blocks.main.showFavorites -->
-                      <!-- ko if: blocks.main.IsFavorite --><!-- /ko -->
-                      <!-- ko ifnot: blocks.main.IsFavorite -->
-                      <div class="like_button">
-                          <a href="javascript:void(0);" data-bind="click:blocks.main.AddFavoritesWithoutComment, i18n: 'goods.mess19'" class="pseudo-link">В избранное</a>
+                  <div class="content_pkp b-catalog-item__actions">
+                    <div class="increase">
+                      <!-- ko ifnot: blocks.main.isEgoods -->
+                      <p class="b-catalog-item__limits">
+                        <span data-bind="i18n: 'goods.mess15'">На складе</span>: <span data-bind="i18n: blocks.main.inStock" class="value">Да</span>
+                      </p>
+                      <!-- /ko -->
+                      <!-- ko if: blocks.main.showSelectionCount -->
+                      <!-- ko if: blocks.main.is_universal != 'yes' -->
+                      <!-- ko if: blocks.main.count() > 0 -->
+                      <div style="margin-bottom:20px" class="b-increment-input">
+                        <span data-bind="click: blocks.main.ClickMinus" class="b-increment-input__darr"></span>
+                        <span class="b-increment-input__input-wrapper">
+                          <input type="text" value="1" maxlength="3" autocomplete="off" data-bind="value: blocks.main.ordered, attr: {id: blocks.main.cssGoodsOrdered}" class="inline-input b-increment-input__input" id="ordered_144761">
+                        </span>
+                        <span data-bind="click: blocks.main.ClickPlus" class="b-increment-input__uarr"></span>
                       </div>
                       <!-- /ko -->
-                  <!-- /ko -->
-              </div>
-            </div>
-          </div>
-          <div id="ya_share" data-yasharel10n="ru" data-yasharetype="link" data-yasharequickservices="vkontakte,facebook,twitter,odnoklassniki,gplus" class="b-catalog-item__share yashare-auto-init ya-share2 ya-share2_inited"><div class="ya-share2__container ya-share2__container_size_s"><ul class="ya-share2__list ya-share2__list_direction_horizontal"><li class="ya-share2__item ya-share2__item_service_vkontakte"><a class="ya-share2__link" href="https://vk.com/share.php?url=https%3A%2F%2Fpokupo.ru%2Fshop%23%2Fgoods%2Fcategory%3D55096%26id%3D144761&amp;title=%D0%93%D0%B8%D0%B3%D0%B0%D0%BD%D1%82%D1%81%D0%BA%D0%B8%D0%B9%20%D1%82%D1%80%D0%B0%D0%BD%D1%81%D0%BF%D0%BE%D1%80%D1%82&amp;description=&amp;image=https%3A%2F%2Fseller.pokupo.ru%2Fimages%2Fgallery%2F5c8b8b8b26506fd98868e3af8f0baa32efde092b.png&amp;utm_source=share2" rel="nofollow" target="_blank" title="ВКонтакте"><span class="ya-share2__badge"><span class="ya-share2__icon"></span><span class="ya-share2__counter"></span></span><span class="ya-share2__title">ВКонтакте</span></a></li><li class="ya-share2__item ya-share2__item_service_odnoklassniki"><a class="ya-share2__link" href="https://connect.ok.ru/dk?st.cmd=WidgetSharePreview&amp;utm_source=share2&amp;st.shareUrl=https%3A%2F%2Fpokupo.ru%2Fshop%23%2Fgoods%2Fcategory%3D55096%26id%3D144761&amp;st.title=%D0%93%D0%B8%D0%B3%D0%B0%D0%BD%D1%82%D1%81%D0%BA%D0%B8%D0%B9%20%D1%82%D1%80%D0%B0%D0%BD%D1%81%D0%BF%D0%BE%D1%80%D1%82&amp;st.description=%D0%93%D0%B8%D0%B3%D0%B0%D0%BD%D1%82%D1%81%D0%BA%D0%B8%D0%B9%20%D1%82%D1%80%D0%B0%D0%BD%D1%81%D0%BF%D0%BE%D1%80%D1%82&amp;st.imageUrl=https:%2F%2Fseller.pokupo.ru%2Fimages%2Fgallery%2F5c8b8b8b26506fd98868e3af8f0baa32efde092b.png" rel="nofollow" target="_blank" title="Одноклассники"><span class="ya-share2__badge"><span class="ya-share2__icon"></span><span class="ya-share2__counter"></span></span><span class="ya-share2__title">Одноклассники</span></a></li><li class="ya-share2__item ya-share2__item_service_twitter"><a class="ya-share2__link" href="https://twitter.com/intent/tweet?text=%D0%93%D0%B8%D0%B3%D0%B0%D0%BD%D1%82%D1%81%D0%BA%D0%B8%D0%B9%20%D1%82%D1%80%D0%B0%D0%BD%D1%81%D0%BF%D0%BE%D1%80%D1%82&amp;url=https%3A%2F%2Fpokupo.ru%2Fshop%23%2Fgoods%2Fcategory%3D55096%26id%3D144761&amp;hashtags=&amp;utm_source=share2" rel="nofollow" target="_blank" title="Twitter"><span class="ya-share2__badge"><span class="ya-share2__icon"></span></span><span class="ya-share2__title">Twitter</span></a></li><li class="ya-share2__item ya-share2__item_service_facebook"><a class="ya-share2__link" href="https://www.facebook.com/sharer.php?src=sp&amp;u=https%3A%2F%2Fpokupo.ru%2Fshop%23%2Fgoods%2Fcategory%3D55096%26id%3D144761&amp;title=%D0%93%D0%B8%D0%B3%D0%B0%D0%BD%D1%82%D1%81%D0%BA%D0%B8%D0%B9%20%D1%82%D1%80%D0%B0%D0%BD%D1%81%D0%BF%D0%BE%D1%80%D1%82&amp;description=&amp;picture=https%3A%2F%2Fseller.pokupo.ru%2Fimages%2Fgallery%2F5c8b8b8b26506fd98868e3af8f0baa32efde092b.png&amp;utm_source=share2" rel="nofollow" target="_blank" title="Facebook"><span class="ya-share2__badge"><span class="ya-share2__icon"></span><span class="ya-share2__counter"></span></span><span class="ya-share2__title">Facebook</span></a></li><li class="ya-share2__item ya-share2__item_service_moimir"><a class="ya-share2__link" href="https://connect.mail.ru/share?url=https%3A%2F%2Fpokupo.ru%2Fshop%23%2Fgoods%2Fcategory%3D55096%26id%3D144761&amp;title=%D0%93%D0%B8%D0%B3%D0%B0%D0%BD%D1%82%D1%81%D0%BA%D0%B8%D0%B9%20%D1%82%D1%80%D0%B0%D0%BD%D1%81%D0%BF%D0%BE%D1%80%D1%82&amp;description=&amp;utm_source=share2" rel="nofollow" target="_blank" title="Мой Мир"><span class="ya-share2__badge"><span class="ya-share2__icon"></span><span class="ya-share2__counter"></span></span><span class="ya-share2__title">Мой Мир</span></a></li><li class="ya-share2__item ya-share2__item_service_lj"><a class="ya-share2__link" href="https://www.livejournal.com/update.bml?subject=%D0%93%D0%B8%D0%B3%D0%B0%D0%BD%D1%82%D1%81%D0%BA%D0%B8%D0%B9%20%D1%82%D1%80%D0%B0%D0%BD%D1%81%D0%BF%D0%BE%D1%80%D1%82&amp;event=https%3A%2F%2Fpokupo.ru%2Fshop%23%2Fgoods%2Fcategory%3D55096%26id%3D144761%0A&amp;utm_source=share2" rel="nofollow" target="_blank" title="LiveJournal"><span class="ya-share2__badge"><span class="ya-share2__icon"></span></span><span class="ya-share2__title">LiveJournal</span></a></li></ul></div></div>
-        </div>
-      </div>
-    </div>
+                      <!-- /ko -->
+                      <!-- /ko -->
+                    </div><!-- ko if: blocks.main.showAddToCart -->
+                    <button id="btn_to_cart" type="button" data-bind="click: blocks.main.AddToCart" class="btn"><i class="icon icon-cart"></i><span data-bind="i18n: 'goods.mess16'">В корзину</span></button><!-- /ko --><!-- ko if: blocks.main.showBuy -->
+                    <button type="button" data-bind="click: blocks.main.Buy, i18n: 'goods.mess17'" class="btn">Купить сразу</button><!-- /ko -->
+                      <!-- ko if: blocks.main.showFavorites -->
+                          <!-- ko if: blocks.main.IsFavorite --><!-- /ko -->
+                          <!-- ko ifnot: blocks.main.IsFavorite -->
+                          <div class="like_button">
+                              <a href="javascript:void(0);" data-bind="click:blocks.main.AddFavoritesWithoutComment, i18n: 'goods.mess19'" class="pseudo-link">В избранное</a>
+                          </div>
+                          <!-- /ko -->
+                      <!-- /ko -->
+                  </div>
+
+                  <div class="certificate__text">
+                    <p>Сертификат не является товаром и не несет в себе какой-либо имущественной ценности, лишь удостоверяет право его владельца на получение товара, указанного в Сертификате. Реализация Сертификатов осуществляется в соответствии с Соглашением об использовании сертификатов: <a href="https://pokupo.ru/certificates">https://pokupo.ru/certificates</a></p>
+                  </div>
+
+                </div>
+
     <div data-bind="template: { name: 'goodsMoreBlockTmpl' }" class="b-catalog-item__aux"><!-- version 1.0-->
   <dl id="more_block" class="tabs tabs--noskin">
     <!-- ko foreach: moreBlock -->
