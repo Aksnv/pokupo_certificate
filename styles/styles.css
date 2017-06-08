@@ -5,6 +5,7 @@
   width: 100%;
   min-height: 718px;
   padding-top: 30px;
+  padding-bottom: 30px;
   background-image: url("../images/certificate_coral_bg.jpg");
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
@@ -22,6 +23,7 @@
 }
 
 .certificate-inner {
+  overflow: hidden;
   width: 920px;
   min-height: 656px;
   margin: 0 auto;
@@ -43,6 +45,7 @@
 
 .certificate-inner h1 {
   line-height: 55px;
+  word-wrap: break-word;
   margin-bottom: 5px;
   color: #fff!important;
 }
@@ -76,6 +79,7 @@ p.certificate__number {
 
 .certificate__image {
   width: 290px;
+  min-height: 1px;
   margin-left: 41px;
   margin-right: 61px;
 }
@@ -102,6 +106,7 @@ p.certificate__number {
 
 .certificate__content #ya_share {
   padding-left: 3px;
+  padding-bottom: 45px;
 }
 
 .certificate-preview {
