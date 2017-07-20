@@ -472,7 +472,7 @@ p.certificate__number {
   width: 1180px;
   /* height: 754px; */
   /* max-height: 754px; */
-  max-height: 98%;
+  max-height: 98%; 
   /* min-height: 98%; */
   padding: 20px 40px 10px 40px;
   margin: 0 auto;
@@ -487,14 +487,10 @@ p.certificate__number {
 
 .popup--default .read-fragment__article {
   position: relative;
-  /* max-height: 550px; */
-  max-height: 625px;
-  /* min-height: 625px; */
+  max-height: 550px; 
   overflow: hidden;
-  /* min-height: 606px; */
   text-align: left;
-  padding-bottom: 72px;
-  /* margin-bottom: 14px; */
+  margin-bottom: 14px; 
   -moz-column-count: 2;
   -moz-column-gap: 78px;
   -webkit-column-count: 2;
