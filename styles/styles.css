@@ -467,13 +467,9 @@ p.certificate__number {
 
 .popup--default .popup--read-fragment {
   position: relative;
-  /* top: 24%; */
   top: 2%;
   width: 1180px;
-  /* height: 754px; */
-  /* max-height: 754px; */
   max-height: 98%; 
-  /* min-height: 98%; */
   padding: 20px 40px 10px 40px;
   margin: 0 auto;
 }
