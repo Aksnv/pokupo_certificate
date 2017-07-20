@@ -164,8 +164,7 @@ p.certificate__number {
 
 .certificate-outer .like_button {
   display: block;
-  /* margin-bottom: 43px; */
-  margin-bottom: 12px;
+  margin-bottom: 43px; 
   padding-left: 27px;
 }
 
@@ -296,8 +295,7 @@ p.certificate__number {
   }
 
   .certificate-outer .like_button {
-    /* margin-bottom: 45px; */
-    margin-bottom: 14px;
+    margin-bottom: 45px; 
   }
 
   .b-catalog-item__actions .like_button {
@@ -419,19 +417,23 @@ p.certificate__number {
 
 /* Read fragment default styles */
 
-.certificate-outer .read-fragment_button {
+.read-fragment_button {
   position: relative;
-  display: inline-block;
+  display: block;
   font-size: 13px;
   line-height: 18px;
-  margin-bottom: 43px;
+  margin-bottom: 12px;
   padding-left: 27px;
+}
+
+.read-fragment_button .pseudo-link {
+  position: relative;
 }
 
 .read-fragment_button .pseudo-link:before {
   position: absolute;
   top: 3px;
-  left: 12px;
+  left: -15px;
   display: block;
   content: '';
   width: 11px;
@@ -441,12 +443,238 @@ p.certificate__number {
   background-position: -288px -255px;
 }
 
+.popup-wrapper {
+  position: fixed;
+  display: block;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  padding: 0;
+  margin: 0;
+  z-index: -1;
+  opacity: 0;
+  -webkit-transition: opacity .15s linear;
+  -o-transition: opacity .15s linear;
+  transition: opacity .15s linear;
+  background: rgba(0,0,0,.5);
+}
+
+.popup-wrapper--active {
+  opacity: 1;
+  z-index: 21;
+}
+
+.popup--default .popup--read-fragment {
+  position: relative;
+  /* top: 24%; */
+  top: 2%;
+  width: 1180px;
+  /* height: 754px; */
+  /* max-height: 754px; */
+  max-height: 98%;
+  /* min-height: 98%; */
+  padding: 20px 40px 10px 40px;
+  margin: 0 auto;
+}
+
+.popup--default .read-fragment__page-number {
+  font-size: 15px;
+  text-align: left;
+  margin-bottom: 52px;
+  color: #666;
+}
+
+.popup--default .read-fragment__article {
+  position: relative;
+  /* max-height: 550px; */
+  max-height: 625px;
+  /* min-height: 625px; */
+  overflow: hidden;
+  /* min-height: 606px; */
+  text-align: left;
+  padding-bottom: 72px;
+  /* margin-bottom: 14px; */
+  -moz-column-count: 2;
+  -moz-column-gap: 78px;
+  -webkit-column-count: 2;
+  -webkit-column-gap: 78px;
+  column-count: 2;
+  column-gap: 78px;
+}
+
+.popup--default .read-fragment__article h2 {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 26px;
+  margin-bottom: 30px;
+  color: #000;
+}
+
+.popup--default .read-fragment__article h3 {
+  font-size: 18px;
+  margin-bottom: 11px;
+  color: #28282c;
+}
+
+.popup--default .read-fragment__article p {
+  font-size: 13px;
+  line-height: 20px;
+  padding-right: 28px;
+  padding-bottom: 10px;
+  color: #000;
+}
+
+.popup--default .read-fragment__article img {
+  padding-bottom: 30px;
+}
+
+.popup--default .read-fragment__paginator {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.popup--default .read-fragment__paginator input[type="range"] {
+  -webkit-appearance: none;
+  height: 2px;
+  background-color: #fff;
+  border: none;
+}
+
+.popup--default .read-fragment__paginator input[type="range"]::-moz-range-track {
+  height: 2px;
+  background-color: #fff;
+  border: none;
+}
+
+.popup--default .read-fragment__paginator input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 18px;
+  height: 18px;
+  background-color: #ffa800;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.popup--default .read-fragment__paginator input[type="range"]::-moz-range-thumb {
+  width: 18px;
+  height: 18px;
+  background-color: #ffa800;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.popup--default .popup--read-fragment__left-arrow,
+.popup--default .popup--read-fragment__right-arrow {
+  position: absolute;
+  top: 51%; 
+  content: "";
+  display: block;
+  width: 12px;
+  height: 22px;
+  background-image: url("../images/preview/default_read-fragment_arrow.png");
+}
+
+.popup--default .popup--read-fragment__left-arrow {
+  left: -32px;
+}
+
+.popup--default .popup--read-fragment__left-arrow:hover {
+  background-image: url("../images/preview/default_read-fragment_arrow-active.png");
+  transform: rotate(180deg);
+  cursor: pointer;
+}
+
+.popup--default .popup--read-fragment__right-arrow {
+  right: -32px;
+  transform: rotate(180deg);
+}
+
+.popup--default .popup--read-fragment__right-arrow:hover {
+  background-image: url("../images/preview/default_read-fragment_arrow-active.png");
+  transform: rotate(360deg);
+  cursor: pointer;
+}
+
+.popup--default .popup--read-fragment {
+  background-color: #efece7;
+  border-bottom: 4px solid #343434;
+  box-shadow: none;
+}
+
+.popup--default .read-fragment__paginator input[type="range"] {
+  width: 100%;
+}
+
+.popup--default .popup--read-fragment__close {
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 37px;
+    height: 37px;
+    border: 2px solid #ffa800;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.popup--default .popup--read-fragment__close:hover {
+  background-color: #ffa800;
+}
+
+.popup--default .popup--read-fragment__close::before,
+.popup--default .popup--read-fragment__close::after {
+    position: absolute;
+  top: 16px;
+  left: 7px;
+  content: "";
+  display: block;
+  width: 20px;
+  height: 2px;
+  background-color: #000;
+}
+
+.popup--default .popup--read-fragment__close::before {
+  transform: rotate(45deg);
+}
+
+.popup--default .popup--read-fragment__close::after {
+  transform: rotate(-45deg);
+}
+
+
 /* Read fragment 750px styles */
+
+@media screen and (max-width: 1279px) {
+
+  .popup--default .popup--read-fragment {
+    width: auto;
+    max-width: 1180px;
+    min-width: 300px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .popup--default .read-fragment__article {
+    -moz-column-count: 1;
+    /* -moz-column-gap: 72px; */
+    -webkit-column-count: 1;
+    /* -webkit-column-gap: 72px; */
+    column-count: 1;
+    /* column-gap: 72px; */
+  }
+
+  .popup--default .popup--read-fragment__left-arrow,
+  .popup--default .popup--read-fragment__right-arrow {
+    display: none;
+  }
+
+}
 
 @media screen and (max-width: 1023px) {
 
-  .certificate-outer .read-fragment_button {
-    margin-bottom: 45px;
+  .read-fragment_button {
+    margin-bottom: 14px;
   }
 
   .b-catalog-item__actions .read-fragment_button {

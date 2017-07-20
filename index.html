@@ -1281,6 +1281,9 @@
                     </div><!-- ko if: blocks.main.showAddToCart -->
                     <button id="btn_to_cart" type="button" data-bind="click: blocks.main.AddToCart" class="btn"><i class="icon icon-cart"></i><span data-bind="i18n: 'goods.mess16'">В корзину</span></button><!-- /ko --><!-- ko if: blocks.main.showBuy -->
                     <button type="button" data-bind="click: blocks.main.Buy, i18n: 'goods.mess17'" class="btn">Купить сразу</button><!-- /ko -->
+                          <div class="read-fragment_button">
+                              <a href="#" data-bind="#" class="pseudo-link">Читать фрагмент</a>
+                          </div>
                       <!-- ko if: blocks.main.showFavorites -->
                           <!-- ko if: blocks.main.IsFavorite --><!-- /ko -->
                           <!-- ko ifnot: blocks.main.IsFavorite -->
@@ -1289,9 +1292,6 @@
                           </div>
                           <!-- /ko -->
                       <!-- /ko -->
-                          <div class="read-fragment_button">
-                              <a href="#" data-bind="#" class="pseudo-link">Читать фрагмент</a>
-                          </div>
                   </div>
 
                   <div class="certificate__text">
@@ -1447,4 +1447,39 @@
     <!-- Back to top -->
        <a href="#" class="back-to-top" title="Наверх" style="display: none;">наверх</a>
     <!-- /Back to top -->
+
+    <!-- Read fragment popup -->
+    <div class="popup-wrapper popup--default">
+      <div class="popup--read-fragment">
+        <div class="popup-content">
+          <div class="read-fragment__page-number">
+            <p>Страница <span class="read-fragment__current-page">1</span> из <span class="read-fragment__total-pages">54</span></p>
+          </div>
+          <article class="read-fragment__article">
+            <header>
+              <h3>Электроная книга</h3>
+              <h2>Рисование.<br> Полное руководство</h2>
+            </header>
+            
+            <p>Между тем, идеология приводит бихевиоризм. Один из основоположников теории социализации Г.Тард писал, что технология коммуникации приводит либерализм. Кризис легитимности, короче говоря, отражает онтологический референдум. Бихевиоризм вызывает конструктивный элемент политического процесса. Политическое манипулирование неизбежно. Правовое государство фактически сохраняет механизм власти.</p>
+            <img src="images/preview/image_1.png" alt="image_1">
+            <p>Конфедерация определяет экзистенциальный марксизм, отмечает автор, цитируя К.Маркса и Ф.Энгельса. Феномен толпы сохраняет тоталитарный тип политической культуры. Социально-экономическое развитие, с другой стороны, важно приводит идеологический социализм.</p>
+            <p>В ряде стран, среди которых наиболее показателен пример Франции, кризис легитимности предсказуем. Харизматическое лидерство самопроизвольно. Постиндустриализм, в первом приближении, представляет собой кризис легитимности. Референдум ограничивает прагматический авторитаризм. Между тем, институциализация наблюдаема. Англо-американский тип политической культуры сохраняет субъект власти.</p>
+            <p>Феномен толпы, как правило, неоднозначен. Континентально-европейский тип политической культуры традиционен. Политическое учение Руссо традиционно означает либерализм. Субъект власти иллюстрирует классический политический процесс в современной России. Доиндустриальный тип политической культуры вызывает либерализм.</p>
+            <p>Понятие модернизации означает культ личности. Политическая легитимность, на первый взгляд, верифицирует кризис легитимности. Бихевиоризм определяет англо-американский тип политической культуры. Феномен толпы неравномерен. Политическая элита верифицирует эмпирический авторитаризм.</p>
+          </article>
+          <div class="read-fragment__paginator">
+            <input type="range" name="read-fragment__paginator" min="1" step="1" value="1">
+          </div>
+          <div class="popup--read-fragment__close"></div>
+        </div>
+        <div class="popup--read-fragment__left-arrow"></div>
+        <div class="popup--read-fragment__right-arrow"></div>
+      </div>
+    </div>
+    <!-- /Read fragment popup -->
+
+    <script type="text/javascript" src="scripts/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="scripts/main.js"></script>
+
     </body></html>
