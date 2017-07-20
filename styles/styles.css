@@ -164,7 +164,8 @@ p.certificate__number {
 
 .certificate-outer .like_button {
   display: block;
-  margin-bottom: 43px;
+  /* margin-bottom: 43px; */
+  margin-bottom: 12px;
   padding-left: 27px;
 }
 
@@ -295,7 +296,8 @@ p.certificate__number {
   }
 
   .certificate-outer .like_button {
-    margin-bottom: 45px;
+    /* margin-bottom: 45px; */
+    margin-bottom: 14px;
   }
 
   .b-catalog-item__actions .like_button {
@@ -411,6 +413,44 @@ p.certificate__number {
     padding-left: 0;
     padding-right: 0;
     padding-bottom: 6px;
+  }
+
+}
+
+/* Read fragment default styles */
+
+.certificate-outer .read-fragment_button {
+  position: relative;
+  display: inline-block;
+  font-size: 13px;
+  line-height: 18px;
+  margin-bottom: 43px;
+  padding-left: 27px;
+}
+
+.read-fragment_button .pseudo-link:before {
+  position: absolute;
+  top: 3px;
+  left: 12px;
+  display: block;
+  content: '';
+  width: 11px;
+  height: 14px;
+  /* background-image: url(/themes/default/default/images/sprite.png); */
+  background-image: url(../images/sprite.png);
+  background-position: -288px -255px;
+}
+
+/* Read fragment 750px styles */
+
+@media screen and (max-width: 1023px) {
+
+  .certificate-outer .read-fragment_button {
+    margin-bottom: 45px;
+  }
+
+  .b-catalog-item__actions .read-fragment_button {
+    margin-left: 0!important;
   }
 
 }
