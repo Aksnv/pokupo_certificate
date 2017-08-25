@@ -674,3 +674,37 @@ p.certificate__number {
   }
 
 }
+
+
+/* Product characteristics (default theme) */
+
+.tabs.tabs--noskin .tab__trigger {
+  padding: 0 45px 0 0!important;
+}
+
+.tabs.tabs--noskin .tab__trigger:last-of-type {
+  padding: 0!important;
+}
+
+.tabs.tabs--noskin .tab__content>.content, .tabs.tabs--noskin .tab__content>.content_pkp {
+  padding-top: 8px!important;
+}
+
+.product-characteristics {
+  margin-top: 45px;
+}
+
+.product-characteristics table {
+  font-size: 13px;
+  color: #666;
+}
+
+.product-characteristics table tr > td:first-child {
+  width: 228px;
+  font-weight: 700;
+  color: #000;
+}
+
+.product-characteristics table td {
+  padding-bottom: 7px;
+}

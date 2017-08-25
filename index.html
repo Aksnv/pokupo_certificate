@@ -1302,11 +1302,52 @@
 
     <div data-bind="template: { name: 'goodsMoreBlockTmpl' }" class="b-catalog-item__aux"><!-- version 1.0-->
   <dl id="more_block" class="tabs tabs--noskin">
+
+    <dt class="tab__trigger selected" data-bind="attr: {'id': key}" id="characteristics"><span data-bind="i18n: title">Характеристики</span></dt>
+      <dd class="tab__content selected" data-bind="attr: {'id': key + '_content'}" id="characteristics_content">
+        <div data-bind="template: { name: templateName }" class="content_pkp"><!-- version 1.0-->
+          <!-- product-characteristics -->
+            <div class="product-characteristics">
+              <table>
+                <tr>
+                  <td>Автор</td>
+                  <td>Барбара Шер</td>
+                </tr>
+                <tr>
+                  <td>Год издания</td>
+                  <td>2017</td>
+                </tr>
+                <tr>
+                  <td>ISBN</td>
+                  <td>978-5-00100-541-4</td>
+                </tr>
+                <tr>
+                  <td>Переплет</td>
+                  <td>Мягкая обложка</td>
+                </tr>
+                <tr>
+                  <td>Цветные иллюстрации</td>
+                  <td>Есть</td>
+                </tr>
+                <tr>
+                  <td>Язык издания</td>
+                  <td>Русский</td>
+                </tr>
+                <tr>
+                  <td>Тип издания</td>
+                  <td>Отдельное издание</td>
+                </tr>
+              </table>
+            </div>
+          <!-- /product-characteristics -->
+        </div>
+      </dd>
+
     <!-- ko foreach: moreBlock -->
       <!-- ko if: content -->
       <!-- ko if: $index() == 0 -->
-      <dt class="tab__trigger selected" data-bind="attr: {'id': key}" id="description"><span data-bind="i18n: title">Описание</span></dt>
-      <dd class="tab__content selected" data-bind="attr: {'id': key + '_content'}" id="description_content">
+      <dt class="tab__trigger" data-bind="attr: {'id': key}" id="description"><span data-bind="i18n: title">Описание</span></dt>
+      <dd class="tab__content" data-bind="attr: {'id': key + '_content'}" id="description_content">
         <div data-bind="template: { name: templateName }" class="content_pkp"><!-- version 1.0-->
   <div data-bind="html:content">Род Грин и Стивен Бисти<br>Мягкая обложка<br>Эта развлекательная и познавательная книга рассказывает об устройстве самых больших в мире машин. Каждый юный конструктор будет счастлив узнать заглянуть внутрь самой большой подводной лодки, увидеть строение космического корабля  Аполлон  и разобраться, как они работает самый разный транспорт.</div></div>
       </dd>
@@ -1378,7 +1419,7 @@
       <!-- ko if: content -->
       <!-- ko if: $index() == 0 --><!-- /ko -->
       <!-- ko if: $index() != 0 -->
-      <dt class="tab__trigger" data-bind="attr: {'id': key}" id="opinion"><span data-bind="i18n: title">Отзывы покупателей</span></dt>
+      <dt class="tab__trigger" data-bind="attr: {'id': key}" id="opinion"><span data-bind="i18n: title">Отзывы</span></dt>
       <dd class="tab__content" data-bind="attr: {'id': key + '_content'}" id="opinion_content">
         <div data-bind="template: { name: templateName }" class="content_pkp"><!-- version 1.0-->
   <ul class="reviews-list"><!-- ko foreach: content.params --><!-- /ko -->
