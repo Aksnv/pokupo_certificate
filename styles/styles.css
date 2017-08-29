@@ -708,3 +708,10 @@ p.certificate__number {
 .product-characteristics table td {
   padding-bottom: 7px;
 }
+
+
+/* Advanced search filters (default theme) */
+
+.b-advanced-search__submit {
+  
+}
