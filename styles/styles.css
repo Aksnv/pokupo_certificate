@@ -635,6 +635,60 @@ p.certificate__number {
 }
 
 
+/* Увеличение картинки при клике по ней */
+
+.certificate__image img {
+  max-width: 290px;
+  cursor: pointer;
+}
+
+.image-increase {
+  position: fixed;
+  top: 5%;
+  left: 25%;
+  display: none;
+  width: 50%;
+  height: 90%;
+  text-align: center;
+  z-index: 101;
+}
+
+.image-increase img {
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  max-height: 100%;
+}
+
+.image-increase--active {
+  display: block;
+  pointer-events: none;
+}
+
+.image-increase--active img {
+  pointer-events: auto;
+}
+
+.image-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: 0.7;
+  z-index: 100;
+}
+
+.image-overlay--active {
+  display: block;
+  cursor: pointer;
+}
+
+/* END - Увеличение картинки при клике по ней */
+
+
 /* Read fragment 750px styles */
 
 @media screen and (max-width: 1279px) {
