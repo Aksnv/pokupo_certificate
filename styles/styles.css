@@ -769,3 +769,121 @@ p.certificate__number {
 .b-advanced-search__submit {
   
 }
+
+
+/* Reviews default styles */
+
+.reviews-button {
+  position: relative;
+  left: -20px;
+  width: 213px;
+  height: 40px;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 38px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 20px;
+  color: #ffa800;
+  border: 2px solid #ffa800;
+  border-radius: 20px;
+  outline: none;
+}
+
+.reviews-button:hover {
+  background-color: #ffa800;
+  color: #fff;
+}
+
+.reviews-list__review {
+  font-size: 13px;
+  margin-top: 37px;
+}
+
+.reviews-list__review-rating {
+  position: relative;
+  top: -1px;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.review-rating__label {
+  display: inline-block;
+  vertical-align: top;
+  width: 16px;
+  height: 15px;
+  margin-right: 1px;
+  background-image: url("../images/sprite.png");
+  cursor: pointer;
+}
+
+.review-rating__label--full {
+  background-position: -380px -25px;
+}
+
+.review-rating__label--empty {
+  background-position: -380px -73px;
+}
+
+.reviews-list__review-name,
+.answers-list__answer-name {
+  position: relative;
+  font-weight: 700;
+  margin-right: 12px;
+}
+
+.reviews-list__review-name::after,
+.answers-list__answer-name::after {
+  position: absolute;
+  top: 3px;
+  right: -8px;
+  content: "";
+  display: block;
+  width: 1px;
+  height: 13px;
+  background-color: #ccc;
+}
+
+.reviews-list__review time {
+  margin-right: 10px;
+}
+
+.reviews-list__review a {
+  text-decoration: none;
+  border-bottom: 1px dotted #177a93;
+}
+
+.reviews-list__review a:hover {
+  border-bottom: 1px dotted #ffa800;
+}
+
+.reviews-list__review p {
+  max-width: 630px;
+  margin-top: 10px;
+}
+
+.answers-list {
+  position: relative;
+  margin-top: 25px;
+  padding-left: 50px;
+}
+
+.answers-list::before {
+  position: absolute;
+  top: -6px;
+  left: 29px;
+  content: "";
+  display: block;
+  width: 2px;
+  height: 100%;
+  background-color: #ffa800;
+}
+
+.answers-list__answer {
+  margin-top: 10px;
+  padding-bottom: 8px;
+}
+
+.answers-list__answer p {
+  margin-bottom: 0;
+}

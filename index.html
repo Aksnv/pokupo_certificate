@@ -1142,8 +1142,8 @@
     <div data-bind="template: { name: 'goodsMoreBlockTmpl' }" class="b-catalog-item__aux"><!-- version 1.0-->
   <dl id="more_block" class="tabs tabs--noskin">
 
-    <dt class="tab__trigger selected" data-bind="attr: {'id': key}" id="characteristics"><span data-bind="i18n: title">Характеристики</span></dt>
-      <dd class="tab__content selected" data-bind="attr: {'id': key + '_content'}" id="characteristics_content">
+    <dt class="tab__trigger" data-bind="attr: {'id': key}" id="characteristics"><span data-bind="i18n: title">Характеристики</span></dt>
+      <dd class="tab__content" data-bind="attr: {'id': key + '_content'}" id="characteristics_content">
         <div data-bind="template: { name: templateName }" class="content_pkp"><!-- version 1.0-->
           <!-- product-characteristics -->
             <div class="product-characteristics">
@@ -1258,11 +1258,59 @@
       <!-- ko if: content -->
       <!-- ko if: $index() == 0 --><!-- /ko -->
       <!-- ko if: $index() != 0 -->
-      <dt class="tab__trigger" data-bind="attr: {'id': key}" id="opinion"><span data-bind="i18n: title">Отзывы</span></dt>
-      <dd class="tab__content" data-bind="attr: {'id': key + '_content'}" id="opinion_content">
+      <dt class="tab__trigger selected" data-bind="attr: {'id': key}" id="opinion"><span data-bind="i18n: title">Отзывы</span></dt>
+      <dd class="tab__content selected" data-bind="attr: {'id': key + '_content'}" id="opinion_content">
         <div data-bind="template: { name: templateName }" class="content_pkp"><!-- version 1.0-->
-  <ul class="reviews-list"><!-- ko foreach: content.params --><!-- /ko -->
-  </ul></div>
+          <button class="reviews-button">Написать отзыв о товаре</button>
+          <ul class="reviews-list"><!-- ko foreach: content.params --><!-- /ko -->
+            <li class="reviews-list__review">
+              <ul class="reviews-list__review-rating">
+                <li class="review-rating__label review-rating__label--full"></li>
+                <li class="review-rating__label review-rating__label--full"></li>
+                <li class="review-rating__label review-rating__label--full"></li>
+                <li class="review-rating__label review-rating__label--full"></li>
+                <li class="review-rating__label review-rating__label--empty"></li>
+              </ul>
+              <strong class="reviews-list__review-name">Борис</strong>
+              <time>18 июня 2017 г.</time>
+              <a href="#" class="reviews-list__review-answer">Ответить</a>
+              <p>Да, да!!!<br> Именно так! Настольная книга для любого мечтателя!<br> Я слышал это не раз, но никак не мог добраться до этой книги.</p>
+            </li>
+            <li class="reviews-list__review">
+              <ul class="reviews-list__review-rating">
+                <li class="review-rating__label review-rating__label--full"></li>
+                <li class="review-rating__label review-rating__label--full"></li>
+                <li class="review-rating__label review-rating__label--full"></li>
+                <li class="review-rating__label review-rating__label--full"></li>
+                <li class="review-rating__label review-rating__label--empty"></li>
+              </ul>
+              <strong class="reviews-list__review-name">Наталья</strong>
+              <time>18 июня 2017 г.</time>
+              <a href="#" class="reviews-list__review-answer">Ответить</a>
+              <p>В книге просто и доступно с большим количеством примеров описаны инструменты повышения личной эффективности и улучшения взаимоотношений с окружающими. Для меня ключевыми стали навыки проактивности и мышление в духе «выиграл - выиграл».</p>
+              <ul class="answers-list">
+                <li class="answers-list__answer">
+                  <strong class="answers-list__answer-name">Продавец</strong>
+                  <time>18 июня 2017 г.</time>
+                  <p>Наталья, спасибо за приятный отзыв)))</p>
+                </li>
+              </ul>
+            </li>
+            <li class="reviews-list__review">
+              <ul class="reviews-list__review-rating">
+                <li class="review-rating__label review-rating__label--full"></li>
+                <li class="review-rating__label review-rating__label--full"></li>
+                <li class="review-rating__label review-rating__label--full"></li>
+                <li class="review-rating__label review-rating__label--full"></li>
+                <li class="review-rating__label review-rating__label--empty"></li>
+              </ul>
+              <strong class="reviews-list__review-name">Аркадий</strong>
+              <time>18 июня 2017 г.</time>
+              <a href="#" class="reviews-list__review-answer">Ответить</a>
+              <p>Книга которая дает реальные советы. Она меняет мир. После этой книги я устроилась на новую работу и жить мне кажется стала по другому.</p>
+            </li>
+          </ul>
+        </div>
       </dd>
       <!-- /ko -->
       <!-- /ko -->
