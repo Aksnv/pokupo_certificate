@@ -312,7 +312,7 @@ p.certificate__number {
     margin: 0 auto;
     padding-left: 20px;
     padding-right: 70px;
-    padding-bottom: 32px;
+    padding-bottom: 30px!important;
   }
 
 }
