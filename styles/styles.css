@@ -903,7 +903,7 @@ p.certificate__number {
 .popup-review,
 .popup-answer {
   position: fixed;
-  top: 5%;
+  top: 10%;
   left: calc(50% - 311px);
   display: none;
   width: 622px;
@@ -1030,4 +1030,26 @@ p.certificate__number {
 .popup-review__form-reset:hover,
 .popup-answer__form-reset:hover {
   background-color: #efece7;
+}
+
+
+/* Reviews 750px styles */
+
+@media screen and (max-width: 1023px) {
+
+  .b-catalog-item__aux {
+    display: block!important;
+    width: 710px;
+    margin: 0 auto!important;
+    padding-left: 20px;
+  }
+
+  .tabs.tabs--noskin .tab__trigger span {
+    font-size: 25px;
+  }
+
+  .b-catalog-item__aux .tabs.tabs--noskin .tab__trigger {
+    padding-right: 15px!important;
+  }
+
 }
