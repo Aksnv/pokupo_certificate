@@ -900,7 +900,8 @@ p.certificate__number {
   z-index: 100;
 }
 
-.popup-review {
+.popup-review,
+.popup-answer {
   position: fixed;
   top: 5%;
   left: calc(50% - 311px);
@@ -910,16 +911,19 @@ p.certificate__number {
   padding-top: 45px;
   padding-left: 40px;
   padding-right: 40px;
+  padding-bottom: 45px;
   background-color: white;
   z-index: 101;
 }
 
 .review-overlay--active,
-.popup-review--active {
+.popup-review--active,
+.popup-answer--active {
   display: block;
 }
 
-.popup-review__close-button {
+.popup-review__close-button,
+.popup-answer__close-button {
   position: absolute;
   top: 11px;
   right: 11px;
@@ -932,22 +936,35 @@ p.certificate__number {
   border-radius: 50%;
 }
 
-.popup-review__close-button:hover {
+.popup-review__close-button:hover,
+.popup-answer__close-button:hover {
   background-color: #ffa800;
 }
 
-.popup-review__form {
+.popup-review__form,
+.popup-answer__form {
+  font-size: 13px;
   text-align: left;
 }
 
-.popup-review__form h2 {
+.popup-review__form h2,
+.popup-answer__form h2 {
   font-size: 30px;
   font-weight: 300;
   line-height: 20px;
   margin-bottom: 25px;
 }
 
-.popup-review__form textarea {
+.popup-answer__form h2 {
+  margin-bottom: 20px;
+}
+
+.popup-answer__form time {
+  color: #ccc;
+}
+
+.popup-review__form textarea,
+.popup-answer__form textarea {
   width: 542px;
   max-width: 542px;
   min-height: 180px;
@@ -958,18 +975,31 @@ p.certificate__number {
   resize: none;
 }
 
-.popup-review__form p {
+.popup-answer__form textarea {
+  margin-bottom: 40px;
+}
+
+.popup-review__form p,
+.popup-answer__form p {
   display: inline-block;
   margin-right: 5px;
   margin-bottom: 35px;
 }
 
-.popup-review__form .reviews-list__review-rating {
+.popup-answer__form p {
+  margin-top: 12px;
+  margin-bottom: 25px;
+}
+
+.popup-review__form .reviews-list__review-rating,
+.popup-answer__form .reviews-list__review-rating {
   top: 0;
 }
 
 .popup-review__form-submit,
-.popup-review__form-reset {
+.popup-answer__form-submit,
+.popup-review__form-reset,
+.popup-answer__form-reset {
   height: 60px;
   font-size: 20px;
   font-weight: 600;
@@ -979,21 +1009,25 @@ p.certificate__number {
   border-radius: 30px;
 }
 
-.popup-review__form-submit {
+.popup-review__form-submit,
+.popup-answer__form-submit {
   width: 258px;
   margin-right: 10px;
   border: 4px solid #ffa800;
 }
 
-.popup-review__form-reset {
+.popup-review__form-reset,
+.popup-answer__form-reset {
   width: 164px;
   border: 4px solid #efece7;
 }
 
-.popup-review__form-submit:hover {
+.popup-review__form-submit:hover,
+.popup-answer__form-submit:hover {
   background-color: #ffa800;
 }
 
-.popup-review__form-reset:hover {
+.popup-review__form-reset:hover,
+.popup-answer__form-reset:hover {
   background-color: #efece7;
 }

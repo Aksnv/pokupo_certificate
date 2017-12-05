@@ -35,3 +35,16 @@ $(".popup-review__close-button").click(function() {
   $(".review-overlay").toggleClass("review-overlay--active");
   $(".popup-review").toggleClass("popup-review--active");
 });
+
+/* Форма добавления ответа на отзыв */
+
+$(".reviews-list__review-answer").click(function(e) {
+  e.preventDefault();
+  $(".review-overlay").toggleClass("review-overlay--active");
+  $(".popup-answer").toggleClass("popup-answer--active");
+});
+
+$(".popup-answer__close-button").click(function() {
+  $(".review-overlay").toggleClass("review-overlay--active");
+  $(".popup-answer").toggleClass("popup-answer--active");
+});
