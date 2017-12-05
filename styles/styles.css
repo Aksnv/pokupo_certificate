@@ -312,7 +312,7 @@ p.certificate__number {
     margin: 0 auto;
     padding-left: 20px;
     padding-right: 70px;
-    padding-bottom: 12px;
+    padding-bottom: 32px;
   }
 
 }
@@ -410,7 +410,7 @@ p.certificate__number {
     padding-top: 19px;
     padding-left: 0;
     padding-right: 0;
-    padding-bottom: 6px;
+    padding-bottom: 30px!important;
   }
 
 }
