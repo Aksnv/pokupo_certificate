@@ -1281,7 +1281,7 @@
                 <li class="review-rating__label review-rating__label--full"></li>
                 <li class="review-rating__label review-rating__label--full"></li>
                 <li class="review-rating__label review-rating__label--full"></li>
-                <li class="review-rating__label review-rating__label--full"></li>
+                <li class="review-rating__label review-rating__label--empty"></li>
                 <li class="review-rating__label review-rating__label--empty"></li>
               </ul>
               <strong class="reviews-list__review-name">Наталья</strong>
@@ -1302,7 +1302,7 @@
                 <li class="review-rating__label review-rating__label--full"></li>
                 <li class="review-rating__label review-rating__label--full"></li>
                 <li class="review-rating__label review-rating__label--full"></li>
-                <li class="review-rating__label review-rating__label--empty"></li>
+                <li class="review-rating__label review-rating__label--full"></li>
               </ul>
               <strong class="reviews-list__review-name">Аркадий</strong>
               <time>18 июня 2017 г.</time>
@@ -1409,6 +1409,28 @@
 
     <div class="image-overlay"></div>
     <div class="image-increase"></div>
+
+    <div class="review-overlay"></div>
+    
+    <div class="popup-review">
+      <button class="popup-review__close-button"></button>
+      <form name="popup-review__form" class="popup-review__form" method="POST" action="#">
+        <h2>Оставить отзыв о товаре</h2>
+        <textarea placeholder="Текст комментария"></textarea>
+        <section>
+          <p>Оценить товар</p>
+          <ul class="reviews-list__review-rating">
+            <li class="review-rating__label review-rating__label--full"></li>
+            <li class="review-rating__label review-rating__label--full"></li>
+            <li class="review-rating__label review-rating__label--full"></li>
+            <li class="review-rating__label review-rating__label--full"></li>
+            <li class="review-rating__label review-rating__label--empty"></li>
+          </ul>
+        </section>
+        <input type="submit" class="popup-review__form-submit" value="Оставить отзыв">
+        <input type="reset" class="popup-review__form-reset" value="Отмена">
+      </form>
+    </div>
 
     <script type="text/javascript" src="scripts/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="scripts/main.js"></script>

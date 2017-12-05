@@ -23,4 +23,15 @@ $(".image-overlay").click(function() {
   $(".image-increase img").remove();
 });
 
-/* END - Увеличение картинки при клике по ней */
+
+/* Форма добавления отзыва */
+
+$(".reviews-button").click(function() {
+  $(".review-overlay").toggleClass("review-overlay--active");
+  $(".popup-review").toggleClass("popup-review--active");
+});
+
+$(".popup-review__close-button").click(function() {
+  $(".review-overlay").toggleClass("review-overlay--active");
+  $(".popup-review").toggleClass("popup-review--active");
+});
