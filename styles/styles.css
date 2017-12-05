@@ -796,6 +796,7 @@ p.certificate__number {
 }
 
 .reviews-list__review {
+  position: relative;
   font-size: 13px;
   margin-top: 37px;
 }
@@ -903,7 +904,7 @@ p.certificate__number {
 .popup-review,
 .popup-answer {
   position: fixed;
-  top: 10%;
+  top: 5%;
   left: calc(50% - 311px);
   display: none;
   width: 622px;
@@ -1032,7 +1033,6 @@ p.certificate__number {
   background-color: #efece7;
 }
 
-
 /* Reviews 750px styles */
 
 @media screen and (max-width: 1023px) {
@@ -1050,6 +1050,98 @@ p.certificate__number {
 
   .b-catalog-item__aux .tabs.tabs--noskin .tab__trigger {
     padding-right: 15px!important;
+  }
+
+}
+
+/* Reviews 360px styles */
+
+@media screen and (max-width: 749px) {
+
+  #opinion_content {
+    margin-bottom: 60px;
+  }
+
+  .b-catalog-item__aux {
+    width: 360px;
+    padding-left: 0;
+  }
+
+  .reviews-button {
+    position: absolute;
+    left: calc(50% - 150px);
+    bottom: -85px;
+    width: 300px;
+  }
+
+  .reviews-list__review {
+    margin-top: 65px;
+  }
+
+  .reviews-list .reviews-list__review:first-child {
+    margin-top: 40px;
+  }
+
+  .reviews-list__review a {
+    position: absolute;
+    left: 0;
+    bottom: -30px;
+  }
+
+  .reviews-list__review p {
+    max-width: 345px;
+  }
+
+  .popup-review,
+  .popup-answer {
+    width: 360px;
+    left: calc(50% - 180px);
+    padding-top: 65px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .popup-review__form h2 {
+    text-align: center;
+  }
+
+  .popup-review__form textarea, 
+  .popup-answer__form textarea {
+    width: 300px;
+    min-height: 260px; 
+  }
+
+  .popup-review__form textarea {
+    margin-bottom: 15px;
+  }
+
+  .popup-answer__form textarea {
+    margin-bottom: 30px;
+  }
+
+  .popup-review__form section {
+    text-align: center;
+  }
+
+  .popup-review__form p {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .popup-review__form section .reviews-list__review-rating {
+    margin-bottom: 20px;
+  }
+
+  .popup-review__form-submit, 
+  .popup-answer__form-submit,
+  .popup-review__form-reset, 
+  .popup-answer__form-reset {
+    width: 300px;
+  }
+
+  .popup-review__form-submit, 
+  .popup-answer__form-submit {
+    margin-bottom: 10px;
   }
 
 }

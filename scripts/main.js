@@ -36,6 +36,22 @@ $(".popup-review__close-button").click(function() {
   $(".popup-review").toggleClass("popup-review--active");
 });
 
+$(window).resize(function() {
+  if ($(".popup-review").css("width") == "360px") {
+    $(".popup-review__form h2").text("Оставить отзыв");
+  } else {
+    $(".popup-review__form h2").text("Оставить отзыв о товаре");
+  }
+});
+
+$(document).ready(function() {
+  if ($(".popup-review").css("width") == "360px") {
+    $(".popup-review__form h2").text("Оставить отзыв");
+  } else {
+    $(".popup-review__form h2").text("Оставить отзыв о товаре");
+  }
+});
+
 /* Форма добавления ответа на отзыв */
 
 $(".reviews-list__review-answer").click(function(e) {
