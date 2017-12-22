@@ -669,6 +669,105 @@ p.certificate__number {
   pointer-events: auto;
 }
 
+.image-increase__button {
+  position: absolute;
+  display: block;
+  font-size: 40px;
+  line-height: 40px;
+  color: #fff;
+  border: none;
+  outline: none;
+  pointer-events: auto;
+}
+
+.image-increase__button--disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+.image-increase__close-button {
+  top: 0;
+  right: -40%;
+  width: 24px;
+  height: 24px;
+}
+
+.image-increase__close-button::before,
+.image-increase__close-button::after,
+.image-increase__back-button::before,
+.image-increase__back-button::after,
+.image-increase__forward-button::before,
+.image-increase__forward-button::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  display: block;
+  width: 30px;
+  height: 3px;
+  background-color: #fff;
+}
+
+.image-increase__close-button::before,
+.image-increase__close-button::after {
+  top: 10px;
+  left: -3px;
+}
+
+.image-increase__close-button:hover::before,
+.image-increase__close-button:hover::after,
+.image-increase__back-button:hover::before,
+.image-increase__back-button:hover::after,
+.image-increase__forward-button:hover::before,
+.image-increase__forward-button:hover::after {
+  box-shadow: 0 0 15px #fff;
+}
+
+.image-increase__button--disabled:hover::before,
+.image-increase__button--disabled:hover::after {
+  box-shadow: none;
+}
+
+.image-increase__close-button::before,
+.image-increase__back-button::before,
+.image-increase__forward-button::before {
+  transform: rotate(45deg);
+}
+
+.image-increase__close-button::after,
+.image-increase__back-button::after,
+.image-increase__forward-button::after {
+  transform: rotate(-45deg);
+}
+
+.image-increase__back-button {
+  top: 50%;
+  left: -40%;
+}
+
+.image-increase__forward-button {
+  top: 50%;
+  right: -40%;
+}
+
+.image-increase__back-button,
+.image-increase__forward-button {
+  width: 24px;
+  height: 47px;
+}
+
+.image-increase__back-button::before,
+.image-increase__forward-button::after {
+  top: 32px;
+  left: -3px;
+}
+
+.image-increase__back-button::after,
+.image-increase__forward-button::before {
+  top: 12px;
+  left: -3px;
+}
+
 .image-overlay {
   display: none;
   position: fixed;
@@ -683,7 +782,7 @@ p.certificate__number {
 
 .image-overlay--active {
   display: block;
-  cursor: pointer;
+  cursor: default!important;
 }
 
 /* END - Увеличение картинки при клике по ней */

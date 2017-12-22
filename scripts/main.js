@@ -17,7 +17,27 @@ $(".certificate__image img").click(function() {
   $(".image-increase").prepend($(this).clone());
 });
 
-$(".image-overlay").click(function() {
+/*$(".image-overlay").click(function() {
+  $(".image-overlay").toggleClass("image-overlay--active");
+  $(".image-increase").toggleClass("image-increase--active");
+  $(".image-increase img").remove();
+});*/
+
+
+/* Закрытие увеличенной картинки при нажатии клавиши Esc */
+
+$(document).keydown(function(e) {
+  if (e.which == 27) {
+    $(".image-overlay").toggleClass("image-overlay--active");
+    $(".image-increase").toggleClass("image-increase--active");
+    $(".image-increase img").remove();
+  }
+});
+
+
+/* Закрытие увеличенной картинки при нажатии кнопки Закрыть */
+
+$(".image-increase__close-button").click(function() {
   $(".image-overlay").toggleClass("image-overlay--active");
   $(".image-increase").toggleClass("image-increase--active");
   $(".image-increase img").remove();
