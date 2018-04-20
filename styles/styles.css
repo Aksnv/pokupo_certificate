@@ -1244,3 +1244,44 @@ p.certificate__number {
   }
 
 }
+
+
+/* Contact information */
+
+.contact-information {
+  float: left;
+  position: relative;
+  text-align: right;
+  margin-right: 15px;
+  padding-top: 38px;
+  padding-right: 30px;
+}
+
+.contact-information::after {
+  position: absolute;
+  top: 25px;
+  right: 0;
+  content: "";
+  display: block;
+  width: 1px;
+  height: 60px;
+  background-color: #f2ede7;
+}
+
+.contact-information p {
+  line-height: 16px;
+  margin-bottom: 0;
+}
+
+.contact-information__phone {
+  font-size: 16px;
+  font-weight: 900;
+  color: black;
+}
+
+.contact-information a.contact-information__email {
+  font-size: 12px;
+  font-weight: 400;
+  text-decoration: underline;
+  color: #444;
+}
